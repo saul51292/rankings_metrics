@@ -47,7 +47,7 @@ function getInstaData(userID){
 
     res.on('end', function(){
         var response = JSON.parse(body);
-		console.log("Number of Instagram Likes: " + response.data.counts.followed_by);
+		console.log("Number of Instagram Followers: " + response.data.counts.followed_by);
 	}).on('error', function(e){
       console.log("Got an error: ", e);
 	});
